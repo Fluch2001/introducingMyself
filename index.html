@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francisco Luchtenberg</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Luchtenberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <section>
-        <h1 class="name">Francisco Luchtenberg</h1>
-        <h1 class="myCareer">Tecnicatura en Programación</h1>
-        <h3 class="githubLogo"></h3>
-        <h3 class="linkedinLogo"></h3>
-        <h3 class="cvLogo"></h3>
-    </section>
+  <div class="loader">
+    <video autoplay muted playsinline id="introVideo">
+      <source src="assets/intro.mp4" type="video/mp4" />
+    </video>
+    <div class="loader-logo">FR</div>
+  </div>
 
-    <section>
-        <h1 class="skills">Habilidades</h1>
-        <h3 class="technologies">html5, css, scss, Bootstrap, javascript, reactjs, SQL</h3>
-        <h3 class="softSkills">-</h3>
-    </section>
+  <div class="navbar-container">
+    <div class="navbar-logo">FR</div>
+    <nav class="navbar">
+      <a href="#home" class="nav-link">Inicio</a>
+      <a href="#skills" class="nav-link">Habilidades</a>
+      <a href="#projects" class="nav-link">Proyectos</a>
+      <a href="#contact" class="nav-link">Contacto</a>
+    </nav>
+  </div>
 
-    <section>
-        <h1 class="projects">Proyectos</h1>
-        <h3 class="card"></h3>
-        <h3 class="card"></h3>
-        <h3 class="card"></h3>
-        <h3 class="card"></h3>
-        <h3 class="card"></h3>
-        <h3 class="card"></h3>
-    </section>
+  <section id="home" class="section hero">
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="assets/bg-loop.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1 class="name">Francisco Luchtenberg</h1>
+      <h1 class="myCareer">Tecnicatura en Programación</h1>
+      <h3 class="githubLogo">GitHub: <a href="#" class="highlight">@franlu</a></h3>
+      <h3 class="linkedinLogo">LinkedIn: <a href="#" class="highlight">/in/franlu</a></h3>
+      <h3 class="cvLogo">Currículum: <a href="#" class="highlight">Descargar PDF</a></h3>
+    </div>
+  </section>
 
-    <section>
-        
-    </section>
+  <section id="skills" class="section">
+    <h1 class="skills">Habilidades</h1>
+    <h3 class="technologies">HTML5, CSS, SCSS, Bootstrap, JavaScript, ReactJS, SQL</h3>
+    <h3 class="softSkills">Trabajo en equipo, comunicación, adaptabilidad, aprendizaje continuo</h3>
+  </section>
+
+  <section id="projects" class="section">
+    <h1 class="projects">Proyectos</h1>
+    <div class="card">Proyecto 1 - Descripción breve</div>
+    <div class="card">Proyecto 2 - Descripción breve</div>
+    <div class="card">Proyecto 3 - Descripción breve</div>
+    <div class="card">Proyecto 4 - Descripción breve</div>
+    <div class="card">Proyecto 5 - Descripción breve</div>
+    <div class="card">Proyecto 6 - Descripción breve</div>
+  </section>
+
+  <section id="contact" class="section">
+    <h1 class="contactTitle">Contacto</h1>
+    <p>Envía un email a: <a href="mailto:fran@email.com" class="highlight">fran@email.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Francisco Luchtenberg. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
