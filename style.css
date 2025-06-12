@@ -212,3 +212,34 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.icon-link {
+  color: #f3e300;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.cv-icon {
+  font-size: 1rem;
+  background-color: #f3e300;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
